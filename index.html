@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 class="heading">Guess The Word</h2>
+
+    <div class="guess-game">
+      <div class="game-area">
+        <div class="input"></div>
+        <div class="buttons">
+          <button class="check">Check Word</button>
+          <button class="hint"><span id="remainingHints"></span> Hint</button>
+        </div>
+      </div>
+      <div class="key-color">
+        <p class="key-color-heading">Key Color</p>
+        <div class="colors">
+          <div class="color-sequare correct"></div>
+          <p class="color-description">Letter Is Right And In Place</p>
+        </div>
+        <div class="colors">
+          <div class="color-sequare misplaced"></div>
+          <p class="color-description">Letter Is Right But Not In Place</p>
+        </div>
+        <div class="colors">
+          <div class="color-sequare wrong"></div>
+          <p class="color-description">Letter Is Wrong And Not Exist In Word</p>
+        </div>
+      </div>
+      <div class="message"></div>
+      <button class="reload">Reload</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

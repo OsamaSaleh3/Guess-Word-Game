@@ -1,0 +1,168 @@
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  background: #e3e3e3;;
+  color: #111;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.heading{
+    background-color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,.06);
+}
+
+.guess-game{
+    display: grid;
+    grid-template-columns: 1fr minmax(260px, 360px);
+    align-items: start;
+    gap:32px;
+    padding: 24px;;
+}
+
+@media (max-width: 800px){
+  .guess-game{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.game-area{
+    display: grid;
+  gap: 18px;
+}
+
+.input{
+    display: grid;
+  gap: 12px
+}
+
+
+.guess-row{
+    display:flex;
+    gap:12px;
+    align-items: center;
+    padding:8px 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px rgpa(0,0,0,.05);
+}
+
+.guess-row-title{
+  margin: 0 6px 0 0;
+  font-weight: 700;
+  color: #555;
+  min-width: 3.5ch;
+}
+
+.cells{
+    display: grid;
+    gap: 8px;
+}
+
+.cell{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    text-align: center;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+
+.key-color{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family:arial;
+    width:100%;
+    height: 50%;
+
+}
+
+
+.key-color-heading{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+  
+}
+
+.colors{
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    font-size:medium;
+    font-weight: 700;
+    align-items: center;
+}
+
+.color-sequare{
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+}
+
+
+.correct {
+    background-color: green;
+}
+
+.misplaced {
+    background-color: gold;
+}
+
+.wrong {
+    background-color: gray;
+}
+
+.buttons{
+    display: flex;
+    gap: 7px;
+   
+}
+
+.check{
+    background-color:rgb(180, 44, 10);
+    border:0;
+    border-radius: 3px;
+    width: 69%;
+    height: 50px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.hint{
+    background-color: rgb(7, 94, 91);
+    border: 0;
+    border-radius: 3px;
+    width: 29%;
+    font-size: large;
+    font-weight: 700;
+}
+
+
+.message{
+    text-align: center;
+    font-size: 50px;
+    font-family: arial;
+}
+
+.reload{
+    border: 0;
+    width: auto;
+    height: 50px;
+    background-color: rgb(18, 19, 63);
+    color:#fff;
+    border-radius: 4px;
+}
+
+
+
