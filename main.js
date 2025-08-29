@@ -174,6 +174,7 @@ hintBtn.addEventListener("click", () => {
           hintBtn.disabled = true;
           hintBtn.style.cursor = "not-allowed";
         }
+        rows[rowNum][Math.min(wordLength-1,i+1)].focus();
         return;
       }
     }
