@@ -103,7 +103,6 @@ const words = [
 
 let wordIndex = Math.floor(Math.random() * words.length);
 let word = words[wordIndex];
-word="apple";
 let wordLength = word.length;
 
 console.log(word);
